@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+seaborn
+django
+pytest
+sqlalchemy
+python-dateutil

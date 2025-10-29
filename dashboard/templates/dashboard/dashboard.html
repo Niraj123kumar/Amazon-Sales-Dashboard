@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>📊 Amazon Sales Dashboard</title>
+    <style>
+        body { font-family: Arial; background: #f9fafc; margin: 40px; }
+        h1, h2 { color: #333; }
+        img { width: 600px; border-radius: 10px; box-shadow: 0 0 8px #ccc; margin-bottom: 30px; }
+        ul { line-height: 1.8; }
+        .section { margin-bottom: 50px; }
+    </style>
+</head>
+<body>
+    <h1>📊 Amazon Sales Dashboard</h1>
+
+    <div class="section">
+        <h2>1️⃣ Monthly Sales Trend</h2>
+        <img src="data:image/png;base64,{{ chart1 }}" />
+    </div>
+
+    <div class="section">
+        <h2>2️⃣ Top 5 Categories by Sales</h2>
+        <img src="data:image/png;base64,{{ chart2 }}" />
+    </div>
+
+    <div class="section">
+        <h2>3️⃣ Order Status Breakdown</h2>
+        <img src="data:image/png;base64,{{ chart3 }}" />
+    </div>
+
+    <div class="section">
+        <h2>4️⃣ Top 5 Cities by Sales</h2>
+        <img src="data:image/png;base64,{{ chart4 }}" />
+    </div>
+
+    <div class="section">
+        <h2>5️⃣ Multivariate Correlation Heatmap</h2>
+        <img src="data:image/png;base64,{{ chart5 }}" />
+    </div>
+
+    <div class="section">
+        <h2>6️⃣ Pairplot (Multi-variable View)</h2>
+        <img src="data:image/png;base64,{{ chart6 }}" />
+    </div>
+
+    <div class="section">
+        <h2>📈 Summary</h2>
+        <ul>
+            <li><b>Total Orders:</b> {{ summary.total_orders }}</li>
+            <li><b>Total Sales:</b> ₹{{ summary.total_sales }}</li>
+            <li><b>Average Order Value:</b> ₹{{ summary.avg_order_value }}</li>
+            <li><b>Top Category:</b> {{ summary.top_category }}</li>
+            <li><b>Top City:</b> {{ summary.top_city }}</li>
+        </ul>
+    </div>
+</body>
+</html>
