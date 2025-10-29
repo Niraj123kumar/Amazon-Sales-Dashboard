@@ -21,3 +21,7 @@ media/
 # IDE
 .vscode/
 .idea/
+data/Amazon Sale Report.csv
+data/amazon_sales.json
+*.csv
+*.json
