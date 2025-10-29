@@ -25,3 +25,5 @@ data/Amazon Sale Report.csv
 data/amazon_sales.json
 *.csv
 *.json
+data/amazon_sales_cleaned.csv
+data/amazon_sales.json
